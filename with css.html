@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorer - Travel Expert</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px 0;
+   
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content h1,
+.header-content nav ul li a {
+    color: #333;
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+}
+
+
+
+.hero {
+    background-image: url('images/as.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #8a2151;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #5f1342;
+}
+
+
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.search-bar select,
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+   
+    
+}
+
+.search-bar button {
+    background-color: #8a2151;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.destinations {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+
+.destination-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h4 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.card p {
+    margin: 0 0 10px;
+    color: #666;
+}
+
+.card button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #d44141;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-us {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-us h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.contact-us form {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+}
+
+.contact-us form label {
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-us form input,
+.contact-us form select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.contact-us form button {
+    padding: 15px;
+    background-color: #d44141;
+    color: #fff;    
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Explorer</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Bike Rentals</a></li>
+                    <li><a href="#">Excursions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>WELCOME TO EXPLORER</h2>
+            <h1>Your Adventure Travel Expert in the <span class="highlight">SOUTH</span></h1>
+            <div class="search-bar">
+                <select>
+                    <option value="">Choose</option>
+                </select>
+                <button>Explore</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="destinations">
+        <h3>Destinations</h3>
+        <div class="destination-cards">
+            <div class="card">
+                <img src="images/download.png" alt="Paddy Fields">
+                <h4>Never Ending Paddy Fields and Narrow Roads</h4>
+                <p>Nellore</p>
+                
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <img src="images/download.png" alt="Ride in Town">
+                <h4>Small Ride across town in mid-summer heat</h4>
+                <p>Madurai</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <img src="images/download.png" alt="Lotus Pond">
+                <h4>Catching a Short Break at the Lotus Pond</h4>
+                <p>Chidambaram</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <img src="images/download.png" alt="Mountains and Forests">
+                <h4>Road Trip enroute the mountains and forests</h4>
+                <p>Masinagudi</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <img src="images/download.png" alt="Temple">
+                <h4>Fall in love with the divine agraharams</h4>
+                <p>Kumbakonam</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <img src="images/download.png" alt="Windmills">
+                <h4>Energy driven drive through the windmills</h4>
+                <p>Tirunelveli</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <h3>Contact Us</h3>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name">
+            
+            <label for="hometown">Your Home Town</label>
+            <select id="hometown">
+                <option value="">Choose</option>
+            </select>
+
+            <label for="destination">Where would you like to go?</label>
+            <select id="destination">
+                <option value="">Choose</option>
+            </select>
+
+            <label for="contact">Contact Number</label>
+            <input type="text" id="contact" placeholder="Contact Number">
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+</body>
+</html>
