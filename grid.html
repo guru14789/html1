@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            min-height: 100vh;
+        }
+        .sidebar {
+            background-color: #3a3f44;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .sidebar ul li a:hover {
+            background-color: #575d63;
+        }
+        .content {
+            padding: 20px;
+        }
+        .header {
+            background: url('images/bg4.png') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .header p {
+            font-size: 1.2rem;
+        }
+        .header .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .welcome, .about-us, .management, .services, .skills, .portfolio, .contact {
+            margin: 50px 0;
+            text-align: center;
+        }
+        .welcome h2, .about-us h3, .management h3, .services h3, .skills h3, .portfolio h3, .contact h3 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .team, .service, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .team .member, .service .item, .projects .project {
+            width: 100%;
+            max-width: 200px;
+            text-align: center;
+        }
+        .team .member img, .projects .project img {
+            width: 100%;
+            height: auto;
+        }
+        .skills .progress {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .skills .progress .bar {
+            background-color: #6f42c1;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            width: 60%;
+            text-align: center;
+        }
+        .footer {
+            background-color: #3a3f44;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .footer .social a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                padding: 10px;
+            }
+            .header {
+                padding: 50px 20px;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+            .header p {
+                font-size: 1rem;
+            }
+            .header .btn {
+                padding: 10px 15px;
+            }
+            .team .member, .service .item, .projects .project {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="images/bg5.png" alt="Company Logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h1>Responsive Layout</h1>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="welcome">
+                <h2>Welcome to Our Company</h2>
+                <p>We are a leading company in the tech industry, dedicated to delivering innovative solutions to our clients. Our team of experts is committed to excellence, ensuring that we provide top-notch services that meet your needs. Whether you're looking for cutting-edge technology or personalized support, we are here to help you achieve your goals.</p>
+            </div>
+            
+            <div class="about-us">
+                <h3>About Us</h3>
+                <div class="team">
+                    <div class="member">
+                        <img src="images/download.png" alt="Christina Welldone">
+                        <h4>Christina Welldone</h4>
+                        <p>Marketing Director</p>
+                    </div>
+                    <div class="member">
+                        <img src="images/download.png" alt="Michael Smith">
+                        <h4>Michael Smith</h4>
+                        <p>Product Designer</p>
+                    </div>
+                    <div class="member">
+                        <img src="images/download.png" alt="Sarah Robinson">
+                        <h4>Sarah Robinson</h4>
+                        <p>Lead Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="management">
+                <h3>Our Management Team</h3>
+                <p>Our management team brings decades of experience and a proven track record of success. We focus on creating a collaborative environment where innovation and creativity thrive. Our leadership is dedicated to guiding the company towards sustainable growth and ensuring that our clients always receive the best possible service.</p>
+                <img src="https://placehold.co/800x400" alt="Management Image">
+            </div>
+            
+            <div class="services">
+                <h3>Our Services</h3>
+                <div class="service">
+                    <div class="item">
+                        <i class="fas fa-desktop"></i>
+                        <h4>Web Design</h4>
+                        <p>We craft visually stunning and highly functional websites tailored to your business needs. Our designs are user-friendly and optimized for performance.</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Mobile Apps</h4>
+                        <p>Our mobile app development services ensure that your app stands out in the crowded app market, providing seamless experiences across all devices.</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-search"></i>
+                        <h4>SEO</h4>
+                        <p>We help you rank higher on search engines and attract more visitors to your website with our effective SEO strategies.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills">
+                <h3>Our Skills</h3>
+                <div class="progress">
+                    <div class="bar">Graphic Design - 85%</div>
+                    <div class="bar">Marketing - 70%</div>
+                    <div class="bar">Web Development - 90%</div>
+                </div>
+            </div>
+            <div class="portfolio">
+                <h3>Our Portfolio</h3>
+                <div class="projects">
+                    <div class="project">
+                        <img src="images/download.png" alt="Project 1">
+                        <p>Project Description 1</p>
+                    </div>
+                    <div class="project">
+                        <img src="images/download.png" alt="Project 2">
+                        <p>Project Description 2</p>
+                    </div>
+                    <div class="project">
+                        <img src="images/download.png" alt="Project 3">
+                        <p>Project Description 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>Have any questions or want to work with us? Feel free to reach out to us using the form below, and we'll get back to you as soon as possible.</p>
+                <form>
+                    <input type="text" placeholder="Your Name" required><br><br>
+                    <input type="email" placeholder="Your Email" required><br><br>
+                    <textarea placeholder="Your Message" required></textarea><br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            
+            <div class="footer">
+                <p>Follow us on social media</p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2024 Company Name. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
